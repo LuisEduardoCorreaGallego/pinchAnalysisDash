@@ -195,9 +195,9 @@ class pinchStream(object):
         stream_hot_cold = []
         for i in range(len(T_in)):
             if T_in[i] < T_out[i]:
-                stream_hot_cold.append("HOT")
-            else:
                 stream_hot_cold.append("COLD")
+            else:
+                stream_hot_cold.append("HOT")
         data = {"Stream" : stream_hot_cold,
                 "Inlet temperature" : T_in,
                 "Outlet temperature" : T_out,
