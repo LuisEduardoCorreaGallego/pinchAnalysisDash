@@ -202,13 +202,10 @@ class pinchStream(object):
                 "Inlet temperature" : T_in,
                 "Outlet temperature" : T_out,
                 "Heat capacity" : CP_stream,
-                "Available heat" : Q_dot}
-        #def color_hot_cold(val):
-        #    for i in range(len(T_in)):
-        #        color = 'red' if T_in[i] < T_out[i] else 'blue'
-                
+                "Available heat" : Q_dot}       
         data = pd.DataFrame(data)
-        #data.style.applymap(color_hot_cold)
+        data.style.set_properties(**{'border': '1.3px solid blue',
+                                     'color': 'red'})
         return st.table(data)
         
     @staticmethod
