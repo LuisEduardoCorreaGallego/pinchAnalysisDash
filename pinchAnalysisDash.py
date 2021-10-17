@@ -13,7 +13,6 @@ Used IDE: PyCharm
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
 from PIL import Image
-import tkinter
 plt.style.use('seaborn')
 import numpy as np
 import pandas as pd
