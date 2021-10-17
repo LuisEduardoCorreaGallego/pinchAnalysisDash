@@ -539,8 +539,8 @@ if __name__ == '__main__':
 
     columnN, columnDeltaT = st.sidebar.columns(2)
 
-    columnN.text_input("Number of Streams", key="nStreams")
-    columnDeltaT.text_input("ΔT", key="deltaT")
+    columnN.text_input("Number of Streams", value=3, key="nStreams")
+    columnDeltaT.text_input("ΔT", value=10, key="deltaT")
 
     columnStart, columnTarget, columnQ = st.sidebar.columns(3)
     columnStart.latex(r"T_{start}")
